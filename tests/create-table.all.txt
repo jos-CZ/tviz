@@ -1,0 +1,237 @@
+batch #0 [TSqlStatement[1]] [1..117]
+└ #0 [CreateTableStatement] [1..117] line 2, col 1, offset 1, len 323
+  ├ SchemaObjectName [SchemaObjectName] [5..7] line 2, col 14, offset 14, len 18
+  | ├ SchemaIdentifier [Identifier] [5..5] line 2, col 14, offset 14, len 3
+  | | ├ Value [String] dbo
+  | | └ QuoteType [QuoteType] NotQuoted
+  | ├ BaseIdentifier [Identifier] [7..7] line 2, col 18, offset 18, len 14
+  | | ├ Value [String] coffee table
+  | | └ QuoteType [QuoteType] SquareBracket
+  | ├ Count [Int32] 2
+  | └ Identifiers [Identifier[2]] [5..7]
+  |   ├ #0 [Identifier] [5..5] line 2, col 14, offset 14, len 3
+  |   | ├ Value [String] dbo
+  |   | └ QuoteType [QuoteType] NotQuoted
+  |   └ #1 [Identifier] [7..7] line 2, col 18, offset 18, len 14
+  |     ├ Value [String] coffee table
+  |     └ QuoteType [QuoteType] SquareBracket
+  ├ AsEdge [Boolean] False
+  ├ AsFileTable [Boolean] False
+  ├ AsNode [Boolean] False
+  └ Definition [TableDefinition] [12..115] line 3, col 3, offset 37, len 285
+    ├ ColumnDefinitions [ColumnDefinition[5]] [12..75]
+    | ├ #0 [ColumnDefinition] [12..18] line 3, col 3, offset 37, len 15
+    | | ├ IsPersisted [Boolean] False
+    | | ├ IsRowGuidCol [Boolean] False
+    | | ├ Constraints [ConstraintDefinition[1]] [16..18]
+    | | | └ #0 [NullableConstraintDefinition] [16..18] line 3, col 10, offset 44, len 8
+    | | |   └ Nullable [Boolean] False
+    | | ├ IsHidden [Boolean] False
+    | | ├ IsMasked [Boolean] False
+    | | ├ ColumnIdentifier [Identifier] [12..12] line 3, col 3, offset 37, len 2
+    | | | ├ Value [String] id
+    | | | └ QuoteType [QuoteType] NotQuoted
+    | | └ DataType [SqlDataTypeReference] [14..14] line 3, col 6, offset 40, len 3
+    | |   ├ SqlDataTypeOption [SqlDataTypeOption] Int
+    | |   └ Name [SchemaObjectName] [14..14] line 3, col 6, offset 40, len 3
+    | |     ├ BaseIdentifier [Identifier] [14..14] line 3, col 6, offset 40, len 3
+    | |     | ├ Value [String] int
+    | |     | └ QuoteType [QuoteType] NotQuoted
+    | |     ├ Count [Int32] 1
+    | |     └ Identifiers [Identifier[1]] [14..14]
+    | |       └ #0 [Identifier] [14..14] line 3, col 6, offset 40, len 3
+    | |         ├ Value [String] int
+    | |         └ QuoteType [QuoteType] NotQuoted
+    | ├ #1 [ColumnDefinition] [22..27] line 4, col 3, offset 55, len 9
+    | | ├ IsPersisted [Boolean] False
+    | | ├ IsRowGuidCol [Boolean] False
+    | | ├ IsHidden [Boolean] False
+    | | ├ IsMasked [Boolean] False
+    | | ├ ColumnIdentifier [Identifier] [22..22] line 4, col 3, offset 55, len 1
+    | | | ├ Value [String] c
+    | | | └ QuoteType [QuoteType] NotQuoted
+    | | └ DataType [SqlDataTypeReference] [24..27] line 4, col 5, offset 57, len 7
+    | |   ├ SqlDataTypeOption [SqlDataTypeOption] Char
+    | |   ├ Parameters [Literal[1]] [26..26]
+    | |   | └ #0 [IntegerLiteral] [26..26] line 4, col 10, offset 62, len 1
+    | |   |   ├ LiteralType [LiteralType] Integer
+    | |   |   └ Value [String] 2
+    | |   └ Name [SchemaObjectName] [24..24] line 4, col 5, offset 57, len 4
+    | |     ├ BaseIdentifier [Identifier] [24..24] line 4, col 5, offset 57, len 4
+    | |     | ├ Value [String] char
+    | |     | └ QuoteType [QuoteType] NotQuoted
+    | |     ├ Count [Int32] 1
+    | |     └ Identifiers [Identifier[1]] [24..24]
+    | |       └ #0 [Identifier] [24..24] line 4, col 5, offset 57, len 4
+    | |         ├ Value [String] char
+    | |         └ QuoteType [QuoteType] NotQuoted
+    | ├ #2 [ColumnDefinition] [31..43] line 5, col 3, offset 67, len 55
+    | | ├ IsPersisted [Boolean] False
+    | | ├ DefaultConstraint [DefaultConstraintDefinition] [37..43] line 5, col 19, offset 83, len 39
+    | | | ├ Expression [ParameterlessCall] [43..43] line 5, col 41, offset 105, len 17
+    | | | | └ ParameterlessCallType [ParameterlessCallType] CurrentTimestamp
+    | | | ├ WithValues [Boolean] False
+    | | | └ ConstraintIdentifier [Identifier] [39..39] line 5, col 30, offset 94, len 2
+    | | |   ├ Value [String] df
+    | | |   └ QuoteType [QuoteType] NotQuoted
+    | | ├ IsRowGuidCol [Boolean] False
+    | | ├ Constraints [ConstraintDefinition[1]] [35..35]
+    | | | └ #0 [NullableConstraintDefinition] [35..35] line 5, col 14, offset 78, len 4
+    | | |   └ Nullable [Boolean] True
+    | | ├ IsHidden [Boolean] False
+    | | ├ IsMasked [Boolean] False
+    | | ├ ColumnIdentifier [Identifier] [31..31] line 5, col 3, offset 67, len 1
+    | | | ├ Value [String] d
+    | | | └ QuoteType [QuoteType] NotQuoted
+    | | └ DataType [SqlDataTypeReference] [33..33] line 5, col 5, offset 69, len 8
+    | |   ├ SqlDataTypeOption [SqlDataTypeOption] DateTime
+    | |   └ Name [SchemaObjectName] [33..33] line 5, col 5, offset 69, len 8
+    | |     ├ BaseIdentifier [Identifier] [33..33] line 5, col 5, offset 69, len 8
+    | |     | ├ Value [String] datetime
+    | |     | └ QuoteType [QuoteType] NotQuoted
+    | |     ├ Count [Int32] 1
+    | |     └ Identifiers [Identifier[1]] [33..33]
+    | |       └ #0 [Identifier] [33..33] line 5, col 5, offset 69, len 8
+    | |         ├ Value [String] datetime
+    | |         └ QuoteType [QuoteType] NotQuoted
+    | ├ #3 [ColumnDefinition] [47..63] line 6, col 3, offset 125, len 42
+    | | ├ ComputedColumnExpression [CoalesceExpression] [51..57] line 6, col 8, offset 130, len 18
+    | | | └ Expressions [ScalarExpression[2]] [53..56]
+    | | |   ├ #0 [ColumnReferenceExpression] [53..53] line 6, col 17, offset 139, len 1
+    | | |   | ├ ColumnType [ColumnType] Regular
+    | | |   | └ MultiPartIdentifier [MultiPartIdentifier] [53..53] line 6, col 17, offset 139, len 1
+    | | |   |   ├ Count [Int32] 1
+    | | |   |   └ Identifiers [Identifier[1]] [53..53]
+    | | |   |     └ #0 [Identifier] [53..53] line 6, col 17, offset 139, len 1
+    | | |   |       ├ Value [String] c
+    | | |   |       └ QuoteType [QuoteType] NotQuoted
+    | | |   └ #1 [StringLiteral] [56..56] line 6, col 20, offset 142, len 5
+    | | |     ├ LiteralType [LiteralType] String
+    | | |     ├ IsNational [Boolean] False
+    | | |     ├ IsLargeObject [Boolean] False
+    | | |     └ Value [String] n/a
+    | | ├ IsPersisted [Boolean] True
+    | | ├ IsRowGuidCol [Boolean] False
+    | | ├ Constraints [ConstraintDefinition[1]] [61..63]
+    | | | └ #0 [NullableConstraintDefinition] [61..63] line 6, col 37, offset 159, len 8
+    | | |   └ Nullable [Boolean] False
+    | | ├ IsHidden [Boolean] False
+    | | ├ IsMasked [Boolean] False
+    | | └ ColumnIdentifier [Identifier] [47..47] line 6, col 3, offset 125, len 1
+    | |   ├ Value [String] p
+    | |   └ QuoteType [QuoteType] NotQuoted
+    | └ #4 [ColumnDefinition] [67..75] line 7, col 3, offset 170, len 38
+    |   ├ IsPersisted [Boolean] False
+    |   ├ IsRowGuidCol [Boolean] True
+    |   ├ Constraints [ConstraintDefinition[1]] [73..75]
+    |   | └ #0 [NullableConstraintDefinition] [73..75] line 7, col 33, offset 200, len 8
+    |   |   └ Nullable [Boolean] False
+    |   ├ IsHidden [Boolean] False
+    |   ├ IsMasked [Boolean] False
+    |   ├ ColumnIdentifier [Identifier] [67..67] line 7, col 3, offset 170, len 1
+    |   | ├ Value [String] g
+    |   | └ QuoteType [QuoteType] NotQuoted
+    |   └ DataType [SqlDataTypeReference] [69..69] line 7, col 5, offset 172, len 16
+    |     ├ SqlDataTypeOption [SqlDataTypeOption] UniqueIdentifier
+    |     └ Name [SchemaObjectName] [69..69] line 7, col 5, offset 172, len 16
+    |       ├ BaseIdentifier [Identifier] [69..69] line 7, col 5, offset 172, len 16
+    |       | ├ Value [String] uniqueidentifier
+    |       | └ QuoteType [QuoteType] NotQuoted
+    |       ├ Count [Int32] 1
+    |       └ Identifiers [Identifier[1]] [69..69]
+    |         └ #0 [Identifier] [69..69] line 7, col 5, offset 172, len 16
+    |           ├ Value [String] uniqueidentifier
+    |           └ QuoteType [QuoteType] NotQuoted
+    └ TableConstraints [ConstraintDefinition[2]] [79..115]
+      ├ #0 [UniqueConstraintDefinition] [79..91] line 8, col 3, offset 211, len 43
+      | ├ Clustered [Boolean] False
+      | ├ IsPrimaryKey [Boolean] True
+      | ├ Columns [ColumnWithSortOrder[1]] [90..90]
+      | | └ #0 [ColumnWithSortOrder] [90..90] line 8, col 43, offset 251, len 2
+      | |   ├ Column [ColumnReferenceExpression] [90..90] line 8, col 43, offset 251, len 2
+      | |   | ├ ColumnType [ColumnType] Regular
+      | |   | └ MultiPartIdentifier [MultiPartIdentifier] [90..90] line 8, col 43, offset 251, len 2
+      | |   |   ├ Count [Int32] 1
+      | |   |   └ Identifiers [Identifier[1]] [90..90]
+      | |   |     └ #0 [Identifier] [90..90] line 8, col 43, offset 251, len 2
+      | |   |       ├ Value [String] id
+      | |   |       └ QuoteType [QuoteType] NotQuoted
+      | |   └ SortOrder [SortOrder] NotSpecified
+      | ├ IndexType [IndexType] [-1..-1] line -1, col -1, offset -1, len -1
+      | | └ IndexTypeKind [IndexTypeKind] NonClustered
+      | └ ConstraintIdentifier [Identifier] [81..81] line 8, col 14, offset 222, len 2
+      |   ├ Value [String] pk
+      |   └ QuoteType [QuoteType] NotQuoted
+      └ #1 [ForeignKeyConstraintDefinition] [95..115] line 9, col 3, offset 257, len 65
+        ├ Columns [Identifier[1]] [104..104]
+        | └ #0 [Identifier] [104..104] line 9, col 30, offset 284, len 2
+        |   ├ Value [String] id
+        |   └ QuoteType [QuoteType] NotQuoted
+        ├ ReferenceTableName [SchemaObjectName] [109..111] line 9, col 45, offset 299, len 18
+        | ├ SchemaIdentifier [Identifier] [109..109] line 9, col 45, offset 299, len 3
+        | | ├ Value [String] dbo
+        | | └ QuoteType [QuoteType] NotQuoted
+        | ├ BaseIdentifier [Identifier] [111..111] line 9, col 49, offset 303, len 14
+        | | ├ Value [String] coffee table
+        | | └ QuoteType [QuoteType] SquareBracket
+        | ├ Count [Int32] 2
+        | └ Identifiers [Identifier[2]] [109..111]
+        |   ├ #0 [Identifier] [109..109] line 9, col 45, offset 299, len 3
+        |   | ├ Value [String] dbo
+        |   | └ QuoteType [QuoteType] NotQuoted
+        |   └ #1 [Identifier] [111..111] line 9, col 49, offset 303, len 14
+        |     ├ Value [String] coffee table
+        |     └ QuoteType [QuoteType] SquareBracket
+        ├ ReferencedTableColumns [Identifier[1]] [114..114]
+        | └ #0 [Identifier] [114..114] line 9, col 65, offset 319, len 2
+        |   ├ Value [String] id
+        |   └ QuoteType [QuoteType] NotQuoted
+        ├ DeleteAction [DeleteUpdateAction] NotSpecified
+        ├ UpdateAction [DeleteUpdateAction] NotSpecified
+        ├ NotForReplication [Boolean] False
+        └ ConstraintIdentifier [Identifier] [97..97] line 9, col 14, offset 268, len 2
+          ├ Value [String] fk
+          └ QuoteType [QuoteType] NotQuoted
+batch #1 [TSqlStatement[1]] [123..142]
+└ #0 [CreateIndexStatement] [123..142] line 14, col 1, offset 330, len 50
+  ├ Translated80SyntaxTo90 [Boolean] False
+  ├ Unique [Boolean] False
+  ├ Columns [ColumnWithSortOrder[2]] [136..141]
+  | ├ #0 [ColumnWithSortOrder] [136..136] line 14, col 40, offset 369, len 2
+  | | ├ Column [ColumnReferenceExpression] [136..136] line 14, col 40, offset 369, len 2
+  | | | ├ ColumnType [ColumnType] Regular
+  | | | └ MultiPartIdentifier [MultiPartIdentifier] [136..136] line 14, col 40, offset 369, len 2
+  | | |   ├ Count [Int32] 1
+  | | |   └ Identifiers [Identifier[1]] [136..136]
+  | | |     └ #0 [Identifier] [136..136] line 14, col 40, offset 369, len 2
+  | | |       ├ Value [String] id
+  | | |       └ QuoteType [QuoteType] NotQuoted
+  | | └ SortOrder [SortOrder] NotSpecified
+  | └ #1 [ColumnWithSortOrder] [139..141] line 14, col 44, offset 373, len 6
+  |   ├ Column [ColumnReferenceExpression] [139..139] line 14, col 44, offset 373, len 1
+  |   | ├ ColumnType [ColumnType] Regular
+  |   | └ MultiPartIdentifier [MultiPartIdentifier] [139..139] line 14, col 44, offset 373, len 1
+  |   |   ├ Count [Int32] 1
+  |   |   └ Identifiers [Identifier[1]] [139..139]
+  |   |     └ #0 [Identifier] [139..139] line 14, col 44, offset 373, len 1
+  |   |       ├ Value [String] p
+  |   |       └ QuoteType [QuoteType] NotQuoted
+  |   └ SortOrder [SortOrder] Descending
+  ├ Name [Identifier] [127..127] line 14, col 14, offset 343, len 2
+  | ├ Value [String] ix
+  | └ QuoteType [QuoteType] NotQuoted
+  └ OnName [SchemaObjectName] [131..133] line 14, col 20, offset 349, len 18
+    ├ SchemaIdentifier [Identifier] [131..131] line 14, col 20, offset 349, len 3
+    | ├ Value [String] dbo
+    | └ QuoteType [QuoteType] NotQuoted
+    ├ BaseIdentifier [Identifier] [133..133] line 14, col 24, offset 353, len 14
+    | ├ Value [String] coffee table
+    | └ QuoteType [QuoteType] SquareBracket
+    ├ Count [Int32] 2
+    └ Identifiers [Identifier[2]] [131..133]
+      ├ #0 [Identifier] [131..131] line 14, col 20, offset 349, len 3
+      | ├ Value [String] dbo
+      | └ QuoteType [QuoteType] NotQuoted
+      └ #1 [Identifier] [133..133] line 14, col 24, offset 353, len 14
+        ├ Value [String] coffee table
+        └ QuoteType [QuoteType] SquareBracket

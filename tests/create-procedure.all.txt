@@ -1,0 +1,136 @@
+batch #0 [TSqlStatement[1]] [0..4]
+└ #0 [PredicateSetStatement] [0..4] line 1, col 1, offset 0, len 25
+  ├ Options [SetOptions] QuotedIdentifier
+  └ IsOn [Boolean] False
+batch #1 [TSqlStatement[1]] [9..80]
+└ #0 [CreateProcedureStatement] [9..80] line 4, col 1, offset 30, len 177
+  ├ ProcedureReference [ProcedureReference] [13..15] line 4, col 18, offset 47, len 22
+  | └ Name [SchemaObjectName] [13..15] line 4, col 18, offset 47, len 22
+  |   ├ SchemaIdentifier [Identifier] [13..13] line 4, col 18, offset 47, len 3
+  |   | ├ Value [String] dbo
+  |   | └ QuoteType [QuoteType] NotQuoted
+  |   ├ BaseIdentifier [Identifier] [15..15] line 4, col 22, offset 51, len 18
+  |   | ├ Value [String] boring procedure
+  |   | └ QuoteType [QuoteType] SquareBracket
+  |   ├ Count [Int32] 2
+  |   └ Identifiers [Identifier[2]] [13..15]
+  |     ├ #0 [Identifier] [13..13] line 4, col 18, offset 47, len 3
+  |     | ├ Value [String] dbo
+  |     | └ QuoteType [QuoteType] NotQuoted
+  |     └ #1 [Identifier] [15..15] line 4, col 22, offset 51, len 18
+  |       ├ Value [String] boring procedure
+  |       └ QuoteType [QuoteType] SquareBracket
+  ├ IsForReplication [Boolean] False
+  ├ Options [ProcedureOption[1]] [41..41]
+  | └ #0 [ExecuteAsProcedureOption] [41..41] line 5, col 6, offset 123, len 7
+  |   ├ ExecuteAs [ExecuteAsClause] [41..41] line 5, col 6, offset 123, len 7
+  |   | └ ExecuteAsOption [ExecuteAsOption] Caller
+  |   └ OptionKind [ProcedureOptionKind] ExecuteAs
+  ├ Parameters [ProcedureParameter[3]] [17..37]
+  | ├ #0 [ProcedureParameter] [17..21] line 4, col 41, offset 70, len 18
+  | | ├ IsVarying [Boolean] False
+  | | ├ Modifier [ParameterModifier] ReadOnly
+  | | ├ VariableName [Identifier] [17..17] line 4, col 41, offset 70, len 3
+  | | | ├ Value [String] @ro
+  | | | └ QuoteType [QuoteType] NotQuoted
+  | | └ DataType [SqlDataTypeReference] [19..19] line 4, col 45, offset 74, len 5
+  | |   ├ SqlDataTypeOption [SqlDataTypeOption] Int
+  | |   └ Name [SchemaObjectName] [19..19] line 4, col 45, offset 74, len 5
+  | |     ├ BaseIdentifier [Identifier] [19..19] line 4, col 45, offset 74, len 5
+  | |     | ├ Value [String] int
+  | |     | └ QuoteType [QuoteType] SquareBracket
+  | |     ├ Count [Int32] 1
+  | |     └ Identifiers [Identifier[1]] [19..19]
+  | |       └ #0 [Identifier] [19..19] line 4, col 45, offset 74, len 5
+  | |         ├ Value [String] int
+  | |         └ QuoteType [QuoteType] SquareBracket
+  | ├ #1 [ProcedureParameter] [24..30] line 4, col 61, offset 90, len 10
+  | | ├ IsVarying [Boolean] False
+  | | ├ Modifier [ParameterModifier] None
+  | | ├ VariableName [Identifier] [24..24] line 4, col 61, offset 90, len 2
+  | | | ├ Value [String] @i
+  | | | └ QuoteType [QuoteType] NotQuoted
+  | | ├ DataType [SqlDataTypeReference] [26..26] line 4, col 64, offset 93, len 3
+  | | | ├ SqlDataTypeOption [SqlDataTypeOption] Int
+  | | | └ Name [SchemaObjectName] [26..26] line 4, col 64, offset 93, len 3
+  | | |   ├ BaseIdentifier [Identifier] [26..26] line 4, col 64, offset 93, len 3
+  | | |   | ├ Value [String] int
+  | | |   | └ QuoteType [QuoteType] NotQuoted
+  | | |   ├ Count [Int32] 1
+  | | |   └ Identifiers [Identifier[1]] [26..26]
+  | | |     └ #0 [Identifier] [26..26] line 4, col 64, offset 93, len 3
+  | | |       ├ Value [String] int
+  | | |       └ QuoteType [QuoteType] NotQuoted
+  | | └ Value [IntegerLiteral] [30..30] line 4, col 70, offset 99, len 1
+  | |   ├ LiteralType [LiteralType] Integer
+  | |   └ Value [String] 2
+  | └ #2 [ProcedureParameter] [33..37] line 4, col 73, offset 102, len 15
+  |   ├ IsVarying [Boolean] False
+  |   ├ Modifier [ParameterModifier] Output
+  |   ├ VariableName [Identifier] [33..33] line 4, col 73, offset 102, len 4
+  |   | ├ Value [String] @out
+  |   | └ QuoteType [QuoteType] NotQuoted
+  |   └ DataType [SqlDataTypeReference] [35..35] line 4, col 78, offset 107, len 3
+  |     ├ SqlDataTypeOption [SqlDataTypeOption] Int
+  |     └ Name [SchemaObjectName] [35..35] line 4, col 78, offset 107, len 3
+  |       ├ BaseIdentifier [Identifier] [35..35] line 4, col 78, offset 107, len 3
+  |       | ├ Value [String] int
+  |       | └ QuoteType [QuoteType] NotQuoted
+  |       ├ Count [Int32] 1
+  |       └ Identifiers [Identifier[1]] [35..35]
+  |         └ #0 [Identifier] [35..35] line 4, col 78, offset 107, len 3
+  |           ├ Value [String] int
+  |           └ QuoteType [QuoteType] NotQuoted
+  └ StatementList [StatementList] [50..80] line 7, col 3, offset 146, len 61
+    └ Statements [TSqlStatement[2]] [50..80]
+      ├ #0 [SetVariableStatement] [50..56] line 7, col 3, offset 146, len 13
+      | ├ Variable [VariableReference] [52..52] line 7, col 7, offset 150, len 4
+      | | └ Name [String] @out
+      | ├ SeparatorType [SeparatorType] NotSpecified
+      | ├ FunctionCallExists [Boolean] False
+      | ├ Expression [IntegerLiteral] [56..56] line 7, col 14, offset 157, len 2
+      | | ├ LiteralType [LiteralType] Integer
+      | | └ Value [String] 42
+      | └ AssignmentKind [AssignmentKind] Equals
+      └ #1 [SelectStatement] [59..80] line 8, col 3, offset 162, len 45
+        └ QueryExpression [QuerySpecification] [59..80] line 8, col 3, offset 162, len 45
+          ├ UniqueRowFilter [UniqueRowFilter] NotSpecified
+          └ SelectElements [SelectElement[4]] [61..80]
+            ├ #0 [SelectScalarExpression] [61..63] line 8, col 10, offset 169, len 6
+            | ├ Expression [VariableReference] [61..61] line 8, col 10, offset 169, len 3
+            | | └ Name [String] @ro
+            | └ ColumnName [IdentifierOrValueExpression] [63..63] line 8, col 14, offset 173, len 2
+            |   ├ Value [String] c1
+            |   └ Identifier [Identifier] [63..63] line 8, col 14, offset 173, len 2
+            |     ├ Value [String] c1
+            |     └ QuoteType [QuoteType] NotQuoted
+            ├ #1 [SelectScalarExpression] [66..70] line 8, col 18, offset 177, len 8
+            | ├ Expression [VariableReference] [66..66] line 8, col 18, offset 177, len 2
+            | | └ Name [String] @i
+            | └ ColumnName [IdentifierOrValueExpression] [70..70] line 8, col 24, offset 183, len 2
+            |   ├ Value [String] c2
+            |   └ Identifier [Identifier] [70..70] line 8, col 24, offset 183, len 2
+            |     ├ Value [String] c2
+            |     └ QuoteType [QuoteType] NotQuoted
+            ├ #2 [SelectScalarExpression] [73..75] line 8, col 28, offset 187, len 7
+            | ├ Expression [VariableReference] [73..73] line 8, col 28, offset 187, len 4
+            | | └ Name [String] @out
+            | └ ColumnName [IdentifierOrValueExpression] [75..75] line 8, col 33, offset 192, len 2
+            |   ├ Value [String] c3
+            |   └ Identifier [Identifier] [75..75] line 8, col 33, offset 192, len 2
+            |     ├ Value [String] c3
+            |     └ QuoteType [QuoteType] NotQuoted
+            └ #3 [SelectScalarExpression] [78..80] line 8, col 37, offset 196, len 11
+              ├ Expression [ColumnReferenceExpression] [78..78] line 8, col 37, offset 196, len 8
+              | ├ ColumnType [ColumnType] Regular
+              | └ MultiPartIdentifier [MultiPartIdentifier] [78..78] line 8, col 37, offset 196, len 8
+              |   ├ Count [Int32] 1
+              |   └ Identifiers [Identifier[1]] [78..78]
+              |     └ #0 [Identifier] [78..78] line 8, col 37, offset 196, len 8
+              |       ├ Value [String] quoted
+              |       └ QuoteType [QuoteType] DoubleQuote
+              └ ColumnName [IdentifierOrValueExpression] [80..80] line 8, col 46, offset 205, len 2
+                ├ Value [String] c4
+                └ Identifier [Identifier] [80..80] line 8, col 46, offset 205, len 2
+                  ├ Value [String] c4
+                  └ QuoteType [QuoteType] NotQuoted

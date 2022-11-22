@@ -1,0 +1,78 @@
+batch #0 [TSqlStatement[1]] [1..60]
+└ #0 [CreateFunctionStatement] [1..60] line 2, col 1, offset 1, len 173
+  ├ Name [SchemaObjectName] [5..5] line 2, col 17, offset 17, len 14
+  | ├ BaseIdentifier [Identifier] [5..5] line 2, col 17, offset 17, len 14
+  | | ├ Value [String] just for fun
+  | | └ QuoteType [QuoteType] SquareBracket
+  | ├ Count [Int32] 1
+  | └ Identifiers [Identifier[1]] [5..5]
+  |   └ #0 [Identifier] [5..5] line 2, col 17, offset 17, len 14
+  |     ├ Value [String] just for fun
+  |     └ QuoteType [QuoteType] SquareBracket
+  ├ ReturnType [ScalarFunctionReturnType] [15..15] line 3, col 9, offset 49, len 6
+  | └ DataType [SqlDataTypeReference] [15..15] line 3, col 9, offset 49, len 6
+  |   ├ SqlDataTypeOption [SqlDataTypeOption] BigInt
+  |   └ Name [SchemaObjectName] [15..15] line 3, col 9, offset 49, len 6
+  |     ├ BaseIdentifier [Identifier] [15..15] line 3, col 9, offset 49, len 6
+  |     | ├ Value [String] bigint
+  |     | └ QuoteType [QuoteType] NotQuoted
+  |     ├ Count [Int32] 1
+  |     └ Identifiers [Identifier[1]] [15..15]
+  |       └ #0 [Identifier] [15..15] line 3, col 9, offset 49, len 6
+  |         ├ Value [String] bigint
+  |         └ QuoteType [QuoteType] NotQuoted
+  ├ Options [FunctionOption[4]] [19..44]
+  | ├ #0 [FunctionOption] [19..19] line 4, col 6, offset 61, len 13
+  | | └ OptionKind [FunctionOptionKind] SchemaBinding
+  | ├ #1 [InlineFunctionOption] [22..26] line 4, col 21, offset 76, len 12
+  | | ├ OptionState [OptionState] Off
+  | | └ OptionKind [FunctionOptionKind] Inline
+  | ├ #2 [ExecuteAsFunctionOption] [29..33] line 4, col 35, offset 90, len 18
+  | | ├ ExecuteAs [ExecuteAsClause] [29..33] line 4, col 35, offset 90, len 18
+  | | | ├ ExecuteAsOption [ExecuteAsOption] String
+  | | | └ Literal [StringLiteral] [33..33] line 4, col 46, offset 101, len 7
+  | | |   ├ LiteralType [LiteralType] String
+  | | |   ├ IsNational [Boolean] False
+  | | |   ├ IsLargeObject [Boolean] False
+  | | |   └ Value [String] guest
+  | | └ OptionKind [FunctionOptionKind] ExecuteAs
+  | └ #3 [FunctionOption] [44..44] line 4, col 76, offset 131, len 5
+  |   └ OptionKind [FunctionOptionKind] ReturnsNullOnNullInput
+  ├ Parameters [ProcedureParameter[1]] [8..10]
+  | └ #0 [ProcedureParameter] [8..10] line 2, col 33, offset 33, len 6
+  |   ├ IsVarying [Boolean] False
+  |   ├ Modifier [ParameterModifier] None
+  |   ├ VariableName [Identifier] [8..8] line 2, col 33, offset 33, len 2
+  |   | ├ Value [String] @i
+  |   | └ QuoteType [QuoteType] NotQuoted
+  |   └ DataType [SqlDataTypeReference] [10..10] line 2, col 36, offset 36, len 3
+  |     ├ SqlDataTypeOption [SqlDataTypeOption] Int
+  |     └ Name [SchemaObjectName] [10..10] line 2, col 36, offset 36, len 3
+  |       ├ BaseIdentifier [Identifier] [10..10] line 2, col 36, offset 36, len 3
+  |       | ├ Value [String] int
+  |       | └ QuoteType [QuoteType] NotQuoted
+  |       ├ Count [Int32] 1
+  |       └ Identifiers [Identifier[1]] [10..10]
+  |         └ #0 [Identifier] [10..10] line 2, col 36, offset 36, len 3
+  |           ├ Value [String] int
+  |           └ QuoteType [QuoteType] NotQuoted
+  └ StatementList [StatementList] [46..60] line 5, col 1, offset 137, len 37
+    └ Statements [TSqlStatement[1]] [46..60]
+      └ #0 [BeginEndBlockStatement] [46..60] line 5, col 1, offset 137, len 37
+        └ StatementList [StatementList] [-1..-1] line -1, col -1, offset -1, len -1
+          └ Statements [TSqlStatement[1]] [49..58]
+            └ #0 [ReturnStatement] [49..58] line 6, col 3, offset 145, len 25
+              └ Expression [CastCall] [51..58] line 6, col 10, offset 152, len 18
+                ├ DataType [SqlDataTypeReference] [57..57] line 6, col 21, offset 163, len 6
+                | ├ SqlDataTypeOption [SqlDataTypeOption] BigInt
+                | └ Name [SchemaObjectName] [57..57] line 6, col 21, offset 163, len 6
+                |   ├ BaseIdentifier [Identifier] [57..57] line 6, col 21, offset 163, len 6
+                |   | ├ Value [String] bigint
+                |   | └ QuoteType [QuoteType] NotQuoted
+                |   ├ Count [Int32] 1
+                |   └ Identifiers [Identifier[1]] [57..57]
+                |     └ #0 [Identifier] [57..57] line 6, col 21, offset 163, len 6
+                |       ├ Value [String] bigint
+                |       └ QuoteType [QuoteType] NotQuoted
+                └ Parameter [VariableReference] [53..53] line 6, col 15, offset 157, len 2
+                  └ Name [String] @i

@@ -1,0 +1,214 @@
+batch #0 [TSqlStatement[1]] [1..85]
+└ #0 [CreateFunctionStatement] [1..85] line 2, col 1, offset 1, len 196
+  ├ Name [SchemaObjectName] [5..7] line 2, col 17, offset 17, len 15
+  | ├ ServerIdentifier [Identifier] NULL
+  | ├ DatabaseIdentifier [Identifier] NULL
+  | ├ SchemaIdentifier [Identifier] [5..5] line 2, col 17, offset 17, len 3
+  | | ├ Value [String] dbo
+  | | └ QuoteType [QuoteType] NotQuoted
+  | ├ BaseIdentifier [Identifier] [7..7] line 2, col 21, offset 21, len 11
+  | | ├ Value [String] funny fun
+  | | └ QuoteType [QuoteType] SquareBracket
+  | ├ Count [Int32] 2
+  | └ Identifiers [Identifier[2]] [5..7]
+  |   ├ #0 [Identifier] [5..5] line 2, col 17, offset 17, len 3
+  |   | ├ Value [String] dbo
+  |   | └ QuoteType [QuoteType] NotQuoted
+  |   └ #1 [Identifier] [7..7] line 2, col 21, offset 21, len 11
+  |     ├ Value [String] funny fun
+  |     └ QuoteType [QuoteType] SquareBracket
+  ├ ReturnType [SelectFunctionReturnType] [34..85] line 6, col 3, offset 96, len 101
+  | └ SelectStatement [SelectStatement] [34..85] line 6, col 3, offset 96, len 101
+  |   ├ QueryExpression [QuerySpecification] [69..85] line 11, col 3, offset 166, len 31
+  |   | ├ UniqueRowFilter [UniqueRowFilter] NotSpecified
+  |   | ├ TopRowFilter [TopRowFilter] NULL
+  |   | ├ SelectElements [SelectElement[2]] [71..76]
+  |   | | ├ #0 [SelectScalarExpression] [71..71] line 11, col 10, offset 173, len 2
+  |   | | | ├ Expression [ColumnReferenceExpression] [71..71] line 11, col 10, offset 173, len 2
+  |   | | | | ├ ColumnType [ColumnType] Regular
+  |   | | | | ├ MultiPartIdentifier [MultiPartIdentifier] [71..71] line 11, col 10, offset 173, len 2
+  |   | | | | | ├ Count [Int32] 1
+  |   | | | | | └ Identifiers [Identifier[1]] [71..71]
+  |   | | | | |   └ #0 [Identifier] [71..71] line 11, col 10, offset 173, len 2
+  |   | | | | |     ├ Value [String] c1
+  |   | | | | |     └ QuoteType [QuoteType] NotQuoted
+  |   | | | | └ Collation [Identifier] NULL
+  |   | | | └ ColumnName [IdentifierOrValueExpression] NULL
+  |   | | └ #1 [SelectScalarExpression] [74..76] line 11, col 14, offset 177, len 5
+  |   | |   ├ Expression [ColumnReferenceExpression] [74..76] line 11, col 14, offset 177, len 5
+  |   | |   | ├ ColumnType [ColumnType] Regular
+  |   | |   | ├ MultiPartIdentifier [MultiPartIdentifier] [74..76] line 11, col 14, offset 177, len 5
+  |   | |   | | ├ Count [Int32] 2
+  |   | |   | | └ Identifiers [Identifier[2]] [74..76]
+  |   | |   | |   ├ #0 [Identifier] [74..74] line 11, col 14, offset 177, len 2
+  |   | |   | |   | ├ Value [String] dd
+  |   | |   | |   | └ QuoteType [QuoteType] NotQuoted
+  |   | |   | |   └ #1 [Identifier] [76..76] line 11, col 17, offset 180, len 2
+  |   | |   | |     ├ Value [String] c2
+  |   | |   | |     └ QuoteType [QuoteType] NotQuoted
+  |   | |   | └ Collation [Identifier] NULL
+  |   | |   └ ColumnName [IdentifierOrValueExpression] NULL
+  |   | ├ FromClause [FromClause] [79..85] line 12, col 3, offset 185, len 12
+  |   | | ├ TableReferences [TableReference[1]] [81..85]
+  |   | | | └ #0 [NamedTableReference] [81..85] line 12, col 8, offset 190, len 7
+  |   | | |   ├ SchemaObject [SchemaObjectName] [81..81] line 12, col 8, offset 190, len 1
+  |   | | |   | ├ ServerIdentifier [Identifier] NULL
+  |   | | |   | ├ DatabaseIdentifier [Identifier] NULL
+  |   | | |   | ├ SchemaIdentifier [Identifier] NULL
+  |   | | |   | ├ BaseIdentifier [Identifier] [81..81] line 12, col 8, offset 190, len 1
+  |   | | |   | | ├ Value [String] d
+  |   | | |   | | └ QuoteType [QuoteType] NotQuoted
+  |   | | |   | ├ Count [Int32] 1
+  |   | | |   | └ Identifiers [Identifier[1]] [81..81]
+  |   | | |   |   └ #0 [Identifier] [81..81] line 12, col 8, offset 190, len 1
+  |   | | |   |     ├ Value [String] d
+  |   | | |   |     └ QuoteType [QuoteType] NotQuoted
+  |   | | |   ├ TableHints [TableHint[0]]
+  |   | | |   ├ TableSampleClause [TableSampleClause] NULL
+  |   | | |   ├ TemporalClause [TemporalClause] NULL
+  |   | | |   ├ Alias [Identifier] [85..85] line 12, col 13, offset 195, len 2
+  |   | | |   | ├ Value [String] dd
+  |   | | |   | └ QuoteType [QuoteType] NotQuoted
+  |   | | |   └ ForPath [Boolean] False
+  |   | | └ PredictTableReference [PredictTableReference[0]]
+  |   | ├ WhereClause [WhereClause] NULL
+  |   | ├ GroupByClause [GroupByClause] NULL
+  |   | ├ HavingClause [HavingClause] NULL
+  |   | ├ WindowClause [WindowClause] NULL
+  |   | ├ OrderByClause [OrderByClause] NULL
+  |   | ├ OffsetClause [OffsetClause] NULL
+  |   | └ ForClause [ForClause] NULL
+  |   ├ Into [SchemaObjectName] NULL
+  |   ├ On [Identifier] NULL
+  |   ├ ComputeClauses [ComputeClause[0]]
+  |   ├ WithCtesAndXmlNamespaces [WithCtesAndXmlNamespaces] [34..66] line 6, col 3, offset 96, len 67
+  |   | ├ XmlNamespaces [XmlNamespaces] NULL
+  |   | ├ CommonTableExpressions [CommonTableExpression[1]] [36..66]
+  |   | | └ #0 [CommonTableExpression] [36..66] line 6, col 8, offset 101, len 62
+  |   | |   ├ ExpressionName [Identifier] [36..36] line 6, col 8, offset 101, len 1
+  |   | |   | ├ Value [String] d
+  |   | |   | └ QuoteType [QuoteType] NotQuoted
+  |   | |   ├ Columns [Identifier[0]]
+  |   | |   └ QueryExpression [BinaryQueryExpression] [43..63] line 7, col 5, offset 112, len 47
+  |   | |     ├ BinaryQueryExpressionType [BinaryQueryExpressionType] Union
+  |   | |     ├ All [Boolean] False
+  |   | |     ├ FirstQueryExpression [QuerySpecification] [43..52] line 7, col 5, offset 112, len 19
+  |   | |     | ├ UniqueRowFilter [UniqueRowFilter] NotSpecified
+  |   | |     | ├ TopRowFilter [TopRowFilter] NULL
+  |   | |     | ├ SelectElements [SelectElement[2]] [45..52]
+  |   | |     | | ├ #0 [SelectScalarExpression] [45..47] line 7, col 12, offset 119, len 5
+  |   | |     | | | ├ Expression [VariableReference] [45..45] line 7, col 12, offset 119, len 2
+  |   | |     | | | | ├ Name [String] @i
+  |   | |     | | | | └ Collation [Identifier] NULL
+  |   | |     | | | └ ColumnName [IdentifierOrValueExpression] [47..47] line 7, col 15, offset 122, len 2
+  |   | |     | | |   ├ Value [String] c1
+  |   | |     | | |   ├ Identifier [Identifier] [47..47] line 7, col 15, offset 122, len 2
+  |   | |     | | |   | ├ Value [String] c1
+  |   | |     | | |   | └ QuoteType [QuoteType] NotQuoted
+  |   | |     | | |   └ ValueExpression [ValueExpression] NULL
+  |   | |     | | └ #1 [SelectScalarExpression] [50..52] line 7, col 19, offset 126, len 5
+  |   | |     | |   ├ Expression [VariableReference] [50..50] line 7, col 19, offset 126, len 2
+  |   | |     | |   | ├ Name [String] @c
+  |   | |     | |   | └ Collation [Identifier] NULL
+  |   | |     | |   └ ColumnName [IdentifierOrValueExpression] [52..52] line 7, col 22, offset 129, len 2
+  |   | |     | |     ├ Value [String] c2
+  |   | |     | |     ├ Identifier [Identifier] [52..52] line 7, col 22, offset 129, len 2
+  |   | |     | |     | ├ Value [String] c2
+  |   | |     | |     | └ QuoteType [QuoteType] NotQuoted
+  |   | |     | |     └ ValueExpression [ValueExpression] NULL
+  |   | |     | ├ FromClause [FromClause] NULL
+  |   | |     | ├ WhereClause [WhereClause] NULL
+  |   | |     | ├ GroupByClause [GroupByClause] NULL
+  |   | |     | ├ HavingClause [HavingClause] NULL
+  |   | |     | ├ WindowClause [WindowClause] NULL
+  |   | |     | ├ OrderByClause [OrderByClause] NULL
+  |   | |     | ├ OffsetClause [OffsetClause] NULL
+  |   | |     | └ ForClause [ForClause] NULL
+  |   | |     ├ SecondQueryExpression [QuerySpecification] [58..63] line 9, col 5, offset 146, len 13
+  |   | |     | ├ UniqueRowFilter [UniqueRowFilter] NotSpecified
+  |   | |     | ├ TopRowFilter [TopRowFilter] NULL
+  |   | |     | ├ SelectElements [SelectElement[2]] [60..63]
+  |   | |     | | ├ #0 [SelectScalarExpression] [60..60] line 9, col 12, offset 153, len 1
+  |   | |     | | | ├ Expression [IntegerLiteral] [60..60] line 9, col 12, offset 153, len 1
+  |   | |     | | | | ├ LiteralType [LiteralType] Integer
+  |   | |     | | | | ├ Value [String] 1
+  |   | |     | | | | └ Collation [Identifier] NULL
+  |   | |     | | | └ ColumnName [IdentifierOrValueExpression] NULL
+  |   | |     | | └ #1 [SelectScalarExpression] [63..63] line 9, col 15, offset 156, len 3
+  |   | |     | |   ├ Expression [StringLiteral] [63..63] line 9, col 15, offset 156, len 3
+  |   | |     | |   | ├ LiteralType [LiteralType] String
+  |   | |     | |   | ├ IsNational [Boolean] False
+  |   | |     | |   | ├ IsLargeObject [Boolean] False
+  |   | |     | |   | ├ Value [String] x
+  |   | |     | |   | └ Collation [Identifier] NULL
+  |   | |     | |   └ ColumnName [IdentifierOrValueExpression] NULL
+  |   | |     | ├ FromClause [FromClause] NULL
+  |   | |     | ├ WhereClause [WhereClause] NULL
+  |   | |     | ├ GroupByClause [GroupByClause] NULL
+  |   | |     | ├ HavingClause [HavingClause] NULL
+  |   | |     | ├ WindowClause [WindowClause] NULL
+  |   | |     | ├ OrderByClause [OrderByClause] NULL
+  |   | |     | ├ OffsetClause [OffsetClause] NULL
+  |   | |     | └ ForClause [ForClause] NULL
+  |   | |     ├ OrderByClause [OrderByClause] NULL
+  |   | |     ├ OffsetClause [OffsetClause] NULL
+  |   | |     └ ForClause [ForClause] NULL
+  |   | └ ChangeTrackingContext [ValueExpression] NULL
+  |   └ OptimizerHints [OptimizerHint[0]]
+  ├ Options [FunctionOption[1]] [29..29]
+  | └ #0 [FunctionOption] [29..29] line 4, col 6, offset 73, len 13
+  |   └ OptionKind [FunctionOptionKind] SchemaBinding
+  ├ OrderHint [OrderBulkInsertOption] NULL
+  ├ Parameters [ProcedureParameter[2]] [10..20]
+  | ├ #0 [ProcedureParameter] [10..12] line 2, col 34, offset 34, len 6
+  | | ├ IsVarying [Boolean] False
+  | | ├ Modifier [ParameterModifier] None
+  | | ├ VariableName [Identifier] [10..10] line 2, col 34, offset 34, len 2
+  | | | ├ Value [String] @i
+  | | | └ QuoteType [QuoteType] NotQuoted
+  | | ├ DataType [SqlDataTypeReference] [12..12] line 2, col 37, offset 37, len 3
+  | | | ├ SqlDataTypeOption [SqlDataTypeOption] Int
+  | | | ├ Parameters [Literal[0]]
+  | | | └ Name [SchemaObjectName] [12..12] line 2, col 37, offset 37, len 3
+  | | |   ├ ServerIdentifier [Identifier] NULL
+  | | |   ├ DatabaseIdentifier [Identifier] NULL
+  | | |   ├ SchemaIdentifier [Identifier] NULL
+  | | |   ├ BaseIdentifier [Identifier] [12..12] line 2, col 37, offset 37, len 3
+  | | |   | ├ Value [String] int
+  | | |   | └ QuoteType [QuoteType] NotQuoted
+  | | |   ├ Count [Int32] 1
+  | | |   └ Identifiers [Identifier[1]] [12..12]
+  | | |     └ #0 [Identifier] [12..12] line 2, col 37, offset 37, len 3
+  | | |       ├ Value [String] int
+  | | |       └ QuoteType [QuoteType] NotQuoted
+  | | ├ Nullable [NullableConstraintDefinition] NULL
+  | | └ Value [ScalarExpression] NULL
+  | └ #1 [ProcedureParameter] [15..20] line 2, col 42, offset 42, len 10
+  |   ├ IsVarying [Boolean] False
+  |   ├ Modifier [ParameterModifier] None
+  |   ├ VariableName [Identifier] [15..15] line 2, col 42, offset 42, len 2
+  |   | ├ Value [String] @c
+  |   | └ QuoteType [QuoteType] NotQuoted
+  |   ├ DataType [SqlDataTypeReference] [17..20] line 2, col 45, offset 45, len 7
+  |   | ├ SqlDataTypeOption [SqlDataTypeOption] Char
+  |   | ├ Parameters [Literal[1]] [19..19]
+  |   | | └ #0 [IntegerLiteral] [19..19] line 2, col 50, offset 50, len 1
+  |   | |   ├ LiteralType [LiteralType] Integer
+  |   | |   ├ Value [String] 1
+  |   | |   └ Collation [Identifier] NULL
+  |   | └ Name [SchemaObjectName] [17..17] line 2, col 45, offset 45, len 4
+  |   |   ├ ServerIdentifier [Identifier] NULL
+  |   |   ├ DatabaseIdentifier [Identifier] NULL
+  |   |   ├ SchemaIdentifier [Identifier] NULL
+  |   |   ├ BaseIdentifier [Identifier] [17..17] line 2, col 45, offset 45, len 4
+  |   |   | ├ Value [String] char
+  |   |   | └ QuoteType [QuoteType] NotQuoted
+  |   |   ├ Count [Int32] 1
+  |   |   └ Identifiers [Identifier[1]] [17..17]
+  |   |     └ #0 [Identifier] [17..17] line 2, col 45, offset 45, len 4
+  |   |       ├ Value [String] char
+  |   |       └ QuoteType [QuoteType] NotQuoted
+  |   ├ Nullable [NullableConstraintDefinition] NULL
+  |   └ Value [ScalarExpression] NULL
+  ├ StatementList [StatementList] NULL
+  └ MethodSpecifier [MethodSpecifier] NULL

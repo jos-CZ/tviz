@@ -1,0 +1,22 @@
+batch #0 [TSqlStatement[1]] [1..17]
+└ #0 [SelectStatement] [1..17] line 2, col 1, offset 1, len 41
+  ├ QueryExpression [QuerySpecification] [1..17] line 2, col 1, offset 1, len 41
+  | ├ UniqueRowFilter [UniqueRowFilter] NotSpecified
+  | ├ TopRowFilter [TopRowFilter] NULL
+  | ├ SelectElements [SelectElement[3]] [3..17]
+  | | └ #1 [SelectScalarExpression] [10..12] line 2, col 18, offset 18, len 3
+  | |   ├ Expression [IntegerLiteral] [10..10] line 2, col 18, offset 18, len 1
+  | |   └ ColumnName [IdentifierOrValueExpression] [12..12] line 2, col 20, offset 20, len 1
+  | ├ FromClause [FromClause] NULL
+  | ├ WhereClause [WhereClause] NULL
+  | ├ GroupByClause [GroupByClause] NULL
+  | ├ HavingClause [HavingClause] NULL
+  | ├ WindowClause [WindowClause] NULL
+  | ├ OrderByClause [OrderByClause] NULL
+  | ├ OffsetClause [OffsetClause] NULL
+  | └ ForClause [ForClause] NULL
+  ├ Into [SchemaObjectName] NULL
+  ├ On [Identifier] NULL
+  ├ ComputeClauses [ComputeClause[0]]
+  ├ WithCtesAndXmlNamespaces [WithCtesAndXmlNamespaces] NULL
+  └ OptimizerHints [OptimizerHint[0]]

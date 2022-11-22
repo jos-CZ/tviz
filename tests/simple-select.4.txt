@@ -1,0 +1,8 @@
+batch #0 [TSqlStatement[1]] [1..17]
+└ #0 [SelectStatement] [1..17] line 2, col 1, offset 1, len 41
+  └ QueryExpression [QuerySpecification] [1..17] line 2, col 1, offset 1, len 41
+    ├ UniqueRowFilter [UniqueRowFilter] NotSpecified
+    └ SelectElements [SelectElement[3]] [3..17]
+      └ #0 [SelectScalarExpression] [3..7] line 2, col 8, offset 8, len 8
+        ├ Expression [StringLiteral] [3..3] line 2, col 8, offset 8, len 3
+        └ ColumnName [IdentifierOrValueExpression] [7..7] line 2, col 15, offset 15, len 1
