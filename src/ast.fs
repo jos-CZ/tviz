@@ -86,6 +86,11 @@ module ast =
       | _ -> None
     | _ -> None
 
+  let private propType (p:System.Reflection.PropertyInfo) =
+    match Option.ofObj (System.Nullable.GetUnderlyingType p.PropertyType) with
+    | Some t -> t.Name
+    | None -> p.PropertyType.Name
+
   let walkFrag astCreator (f:TSqlFragment) = [
     for p in f.GetType().GetProperties() do
       if not p.CanRead then
@@ -95,7 +100,7 @@ module ast =
       elif not (List.contains p.Name skippedProps) then
         match Option.ofObj (p.GetValue(f)) with
         | Some value -> yield astCreator p.Name value
-        | None -> yield Empty $"{p.Name} [{p.PropertyType.Name}] NULL"
+        | None -> yield Empty $"{p.Name} [{propType p}] NULL"
   ]
 
   let unfoldFrag tokens (f:TSqlFragment) =

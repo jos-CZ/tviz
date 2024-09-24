@@ -39,9 +39,9 @@ batch #2 [TSqlStatement[1]] [17..116]
   |     | | | | ├ Nullable [Boolean] False
   |     | | | | └ ConstraintIdentifier [Identifier] NULL
   |     | | | └ #1 [UniqueConstraintDefinition] [54..54] line 7, col 40, offset 141, len 6
-  |     | | |   ├ Clustered [Nullable`1] NULL
+  |     | | |   ├ Clustered [Boolean] NULL
   |     | | |   ├ IsPrimaryKey [Boolean] False
-  |     | | |   ├ IsEnforced [Nullable`1] NULL
+  |     | | |   ├ IsEnforced [Boolean] NULL
   |     | | |   ├ Columns [ColumnWithSortOrder[0]]
   |     | | |   ├ IndexOptions [IndexOption[0]]
   |     | | |   ├ OnFileGroupOrPartitionScheme [FileGroupOrPartitionScheme] NULL
@@ -50,7 +50,7 @@ batch #2 [TSqlStatement[1]] [17..116]
   |     | | |   └ ConstraintIdentifier [Identifier] NULL
   |     | | ├ StorageOptions [ColumnStorageOptions] NULL
   |     | | ├ Index [IndexDefinition] NULL
-  |     | | ├ GeneratedAlways [Nullable`1] NULL
+  |     | | ├ GeneratedAlways [GeneratedAlwaysType] NULL
   |     | | ├ IsHidden [Boolean] False
   |     | | ├ Encryption [ColumnEncryptionDefinition] NULL
   |     | | ├ IsMasked [Boolean] False
@@ -86,7 +86,7 @@ batch #2 [TSqlStatement[1]] [17..116]
   |     | | |   └ ConstraintIdentifier [Identifier] NULL
   |     | | ├ StorageOptions [ColumnStorageOptions] NULL
   |     | | ├ Index [IndexDefinition] NULL
-  |     | | ├ GeneratedAlways [Nullable`1] NULL
+  |     | | ├ GeneratedAlways [GeneratedAlwaysType] NULL
   |     | | ├ IsHidden [Boolean] False
   |     | | ├ Encryption [ColumnEncryptionDefinition] NULL
   |     | | ├ IsMasked [Boolean] False
@@ -119,7 +119,7 @@ batch #2 [TSqlStatement[1]] [17..116]
   |     |   ├ Constraints [ConstraintDefinition[0]]
   |     |   ├ StorageOptions [ColumnStorageOptions] NULL
   |     |   ├ Index [IndexDefinition] NULL
-  |     |   ├ GeneratedAlways [Nullable`1] NULL
+  |     |   ├ GeneratedAlways [GeneratedAlwaysType] NULL
   |     |   ├ IsHidden [Boolean] False
   |     |   ├ Encryption [ColumnEncryptionDefinition] NULL
   |     |   ├ IsMasked [Boolean] False

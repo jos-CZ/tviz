@@ -34,7 +34,7 @@ batch #0 [TSqlStatement[1]] [1..117]
   | | | |   └ ConstraintIdentifier [Identifier] NULL
   | | | ├ StorageOptions [ColumnStorageOptions] NULL
   | | | ├ Index [IndexDefinition] NULL
-  | | | ├ GeneratedAlways [Nullable`1] NULL
+  | | | ├ GeneratedAlways [GeneratedAlwaysType] NULL
   | | | ├ IsHidden [Boolean] False
   | | | ├ Encryption [ColumnEncryptionDefinition] NULL
   | | | ├ IsMasked [Boolean] False
@@ -67,7 +67,7 @@ batch #0 [TSqlStatement[1]] [1..117]
   | | | ├ Constraints [ConstraintDefinition[0]]
   | | | ├ StorageOptions [ColumnStorageOptions] NULL
   | | | ├ Index [IndexDefinition] NULL
-  | | | ├ GeneratedAlways [Nullable`1] NULL
+  | | | ├ GeneratedAlways [GeneratedAlwaysType] NULL
   | | | ├ IsHidden [Boolean] False
   | | | ├ Encryption [ColumnEncryptionDefinition] NULL
   | | | ├ IsMasked [Boolean] False
@@ -115,7 +115,7 @@ batch #0 [TSqlStatement[1]] [1..117]
   | | | |   └ ConstraintIdentifier [Identifier] NULL
   | | | ├ StorageOptions [ColumnStorageOptions] NULL
   | | | ├ Index [IndexDefinition] NULL
-  | | | ├ GeneratedAlways [Nullable`1] NULL
+  | | | ├ GeneratedAlways [GeneratedAlwaysType] NULL
   | | | ├ IsHidden [Boolean] False
   | | | ├ Encryption [ColumnEncryptionDefinition] NULL
   | | | ├ IsMasked [Boolean] False
@@ -168,7 +168,7 @@ batch #0 [TSqlStatement[1]] [1..117]
   | | | |   └ ConstraintIdentifier [Identifier] NULL
   | | | ├ StorageOptions [ColumnStorageOptions] NULL
   | | | ├ Index [IndexDefinition] NULL
-  | | | ├ GeneratedAlways [Nullable`1] NULL
+  | | | ├ GeneratedAlways [GeneratedAlwaysType] NULL
   | | | ├ IsHidden [Boolean] False
   | | | ├ Encryption [ColumnEncryptionDefinition] NULL
   | | | ├ IsMasked [Boolean] False
@@ -190,7 +190,7 @@ batch #0 [TSqlStatement[1]] [1..117]
   | |   |   └ ConstraintIdentifier [Identifier] NULL
   | |   ├ StorageOptions [ColumnStorageOptions] NULL
   | |   ├ Index [IndexDefinition] NULL
-  | |   ├ GeneratedAlways [Nullable`1] NULL
+  | |   ├ GeneratedAlways [GeneratedAlwaysType] NULL
   | |   ├ IsHidden [Boolean] False
   | |   ├ Encryption [ColumnEncryptionDefinition] NULL
   | |   ├ IsMasked [Boolean] False
@@ -218,7 +218,7 @@ batch #0 [TSqlStatement[1]] [1..117]
   | | ├ #0 [UniqueConstraintDefinition] [79..91] line 8, col 3, offset 211, len 43
   | | | ├ Clustered [Boolean] False
   | | | ├ IsPrimaryKey [Boolean] True
-  | | | ├ IsEnforced [Nullable`1] NULL
+  | | | ├ IsEnforced [Boolean] NULL
   | | | ├ Columns [ColumnWithSortOrder[1]] [90..90]
   | | | | └ #0 [ColumnWithSortOrder] [90..90] line 8, col 43, offset 251, len 2
   | | | |   ├ Column [ColumnReferenceExpression] [90..90] line 8, col 43, offset 251, len 2
@@ -284,7 +284,7 @@ batch #1 [TSqlStatement[1]] [123..142]
 └ #0 [CreateIndexStatement] [123..142] line 14, col 1, offset 330, len 50
   ├ Translated80SyntaxTo90 [Boolean] False
   ├ Unique [Boolean] False
-  ├ Clustered [Nullable`1] NULL
+  ├ Clustered [Boolean] NULL
   ├ Columns [ColumnWithSortOrder[2]] [136..141]
   | ├ #0 [ColumnWithSortOrder] [136..136] line 14, col 40, offset 369, len 2
   | | ├ Column [ColumnReferenceExpression] [136..136] line 14, col 40, offset 369, len 2
