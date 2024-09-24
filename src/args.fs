@@ -6,13 +6,13 @@ module args =
 
   type
     T =
-    | [<AltCommandLine("-f")>] File of path:string
-    | [<AltCommandLine("-q")>] Query of ``T-SQL``:string
+    | [<AltCommandLine("-f"); Unique>] File of path:string
+    | [<AltCommandLine("-q"); Unique>] Query of ``T-SQL``:string
     | [<AltCommandLine("-t")>] Token of index:int
-    | All
-    | Empty
-    | Stream
-    | [<Hidden>] Debug
+    | [<Unique>] All
+    | [<Unique>] Empty
+    | [<Unique>] Stream
+    | [<Hidden; Unique>] Debug
 
     interface IArgParserTemplate with
       member this.Usage =
