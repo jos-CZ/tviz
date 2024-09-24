@@ -19,7 +19,7 @@ module parse =
     match parser.Parse(reader, &errors) with
     | res when errors.Count = 0 -> res
     | _ -> failwith $"parse error\n{parseErrorsToString errors}"
-  
+
   let batchVisitor (rx:ResizeArray<_>) = {
     new TSqlFragmentVisitor() with
     override this.Visit(b:TSqlBatch) = rx.Add(b)
