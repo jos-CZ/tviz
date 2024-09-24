@@ -16,8 +16,8 @@
     <Compile Include="src/main.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Argu" Version="6.1.1" />
-    <PackageReference Include="Microsoft.SqlServer.DacFx" Version="161.6374.0" />
-    <PackageReference Update="FSharp.Core" Version="7.0.0" />
+    <PackageReference Include="Argu" Version="6.2.4" />
+    <PackageReference Include="Microsoft.SqlServer.DacFx" Version="162.4.92" />
+    <PackageReference Update="FSharp.Core" Version="8.0.400" />
   </ItemGroup>
 </Project>
