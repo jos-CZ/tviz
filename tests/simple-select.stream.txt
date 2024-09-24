@@ -1,0 +1,7 @@
+[TSqlBatch] [1..17] line 2, col 1, offset 1, len 41
+[SelectStatement] [1..17] line 2, col 1, offset 1, len 41
+#0 line 1, col 1, offset 0 [WhiteSpace] '
+'
+#1 line 2, col 1, offset 1 [Select] 'select'
+#12 line 2, col 20, offset 20 [Identifier] 'B'
+#19 line 3, col 1, offset 43 [EndOfFile] ''
