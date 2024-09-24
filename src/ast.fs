@@ -49,6 +49,15 @@ module ast =
     "ScriptTokenStream"
   ]
 
+  let tokenStreamFilter tokens =
+    if List.length tokens = 0 then
+      fun _ -> true
+    else
+      fun (i, _) -> List.contains i tokens
+
+  let tokenDescription (t:TSqlParserToken) =
+    $"line {t.Line}, col {t.Column}, offset {t.Offset} [{t.TokenType}] '{t.Text}'"
+
   let fragmentDescription (f:TSqlFragment) =
     $"[{f.GetType().Name}] [{f.FirstTokenIndex}..{f.LastTokenIndex}] "
     + $"line {f.StartLine}, col {f.StartColumn}, "

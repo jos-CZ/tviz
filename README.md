@@ -7,7 +7,7 @@ and reflection.
 
 Inspired by https://github.com/GoEddie/ScriptDomVisualizer
 
-    USAGE: tviz.exe [--help] [--file <path>] [--query <T-SQL>] [--token <index>] [--all] [--empty]
+    USAGE: tviz.exe [--help] [--file <path>] [--query <T-SQL>] [--token <index>] [--all] [--empty] [--stream]
 
     OPTIONS:
 
@@ -16,6 +16,7 @@ Inspired by https://github.com/GoEddie/ScriptDomVisualizer
         --token, -t <index>   unfold fragments containing given token index
         --all                 unfold all fragments
         --empty               show empty/null properties
+        --stream              instead of AST, print token stream
         --help                display this list of options.
 
 Source precedence is `--file`, `--query`, `<stdin>`.
@@ -147,5 +148,26 @@ With `--empty`:
       ├ ComputeClauses [ComputeClause[0]]
       ├ WithCtesAndXmlNamespaces [WithCtesAndXmlNamespaces] NULL
       └ OptimizerHints [OptimizerHint[0]]
+
+Use `--stream` to print token stream:
+
+    $ dotnet run --project tviz.fsproj -- --stream --query "/* comment */ select 'c'"
+    [TSqlBatch] [2..4] line 1, col 15, offset 14, len 10
+    [SelectStatement] [2..4] line 1, col 15, offset 14, len 10
+    #0 line 1, col 1, offset 0 [MultilineComment] '/* comment */'
+    #1 line 1, col 14, offset 13 [WhiteSpace] ' '
+    #2 line 1, col 15, offset 14 [Select] 'select'
+    #3 line 1, col 21, offset 20 [WhiteSpace] ' '
+    #4 line 1, col 22, offset 21 [AsciiStringLiteral] ''c''
+    #5 line 1, col 25, offset 24 [EndOfFile] ''
+
+You can limit printed tokens by passing `--token`:
+
+    $ dotnet run --project tviz.fsproj -- --stream --query "/* just a comment */ select 'c'" -t 0 -t 2 -t 4
+    [TSqlBatch] [2..4] line 1, col 22, offset 21, len 10
+    [SelectStatement] [2..4] line 1, col 22, offset 21, len 10
+    #0 line 1, col 1, offset 0 [MultilineComment] '/* just a comment */'
+    #2 line 1, col 22, offset 21 [Select] 'select'
+    #4 line 1, col 29, offset 28 [AsciiStringLiteral] ''c''
 
 Browse directory `tests` for more examples.
